@@ -21,6 +21,6 @@ jobs:
       - name: validation
         id: files
         run: |
-          mkdir -p /tmp/test
+          sudo mkdir -p /tmp/test
           SSH_PRIVATE_KEY: ${{secrets.MQ_KEY}}
           ssh -i $SSH_PRIVATE_KEY pkh045@scrbsmqdk007491
