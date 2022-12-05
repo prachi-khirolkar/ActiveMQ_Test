@@ -22,5 +22,5 @@ jobs:
         id: files
         run: |
           mkdir -p /tmp/test
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+          SSH_PRIVATE_KEY: ${{secrets.MQ_KEY}}
           ssh -i $SSH_PRIVATE_KEY pkh045@scrbsmqdk007491
