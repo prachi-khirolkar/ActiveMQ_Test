@@ -10,7 +10,7 @@ on:
     paths-ignore:
       - ""
 jobs:
-  
+  kafkacluster-api:
     runs-on: ubuntu-20.04
     name: validation
     steps:
