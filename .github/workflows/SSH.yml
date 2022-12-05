@@ -11,7 +11,9 @@ on:
       - ""
 jobs:
   kafkacluster-api:
-    runs-on: ubuntu-20.04
+    runs-on:
+      - self-hosted
+      - scrbsmqdk007491
     name: validation
     steps:
       - name: Checkout source code
