@@ -1,5 +1,5 @@
 ---
-name: CI External
+name: CI
 on:
   push:
     branches:
