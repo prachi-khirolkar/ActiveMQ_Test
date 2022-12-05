@@ -1,23 +1,26 @@
+---
 name: CI External
 on:
- push:
-    branches: [ "main" ]
+  push:
+    branches:
+      - main
   pull_request:
-    branches: [ "main" ]
+    branches:
+      - main
     paths-ignore:
-      - ''
+      - ""
 jobs:
   kafkacluster-api:
     runs-on: ubuntu-20.04
     name: validation
     steps:
-        - name: 'Checkout source code'
-          uses: actions/checkout@v2
-          with:
-             fetch-depth: 0
-        - name: validation
-          id: files
-          run: |
-            mkdir -p /tmp/test
-            SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-            ssh -i $SSH_PRIVATE_KEY pkh045@scrbsmqdk007491
+      - name: Checkout source code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: validation
+        id: files
+        run: |
+          mkdir -p /tmp/test
+          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
+          ssh -i $SSH_PRIVATE_KEY pkh045@scrbsmqdk007491
