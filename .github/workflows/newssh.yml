@@ -1,0 +1,43 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI_MQ
+
+# Controls when the workflow will run
+on:
+# Triggers the workflow on push or pull request events but only for the "develop" branch
+  push:
+    branches: 
+      #- feature/OHM-16273-fix-1
+      #- release/ohm_dd_mvp_01
+      - main
+        
+    paths-ignore:
+      - ""
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+# This workflow contains a single job called "build"
+  build:
+# The type of runner that the job will run on
+    runs-on: 
+         - self-hosted
+         - activemq_7491
+    # outputs:
+    #   package: ${{ steps.set_var_rest.outputs.package }}
+    # permissions:
+    #   actions: write
+## Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Git connect
+        run: |
+          echo "Welcome to GitHUB"
+          uses: pkh045/ssh-action@master
+          host: scrbsmqdk007497
+          username: pkh045
+          password: yc]%2z\93C(cB[WE
+          port: 22
+          script: |
+            mkdir -p /home/pkh045/test
+          
