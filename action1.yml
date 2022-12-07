@@ -1,0 +1,14 @@
+name: 'SSH Remote Commands'
+description: 'Executing remote ssh commands'
+inputs:
+  host:
+    description: 'ssh host'
+  port:
+    description: 'ssh port'
+    default: 22
+  passphrase:
+    description: 'ssh key passphrase'
+  username:
+    description: 'ssh username'
+  password:
+    description: 'ssh password'
