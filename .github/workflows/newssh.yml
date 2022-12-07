@@ -34,7 +34,7 @@ jobs:
         run: |
           echo "Welcome to GitHUB"
           uses: prachi-khirolkar/ActiveMQ_Test@main
-          host: scrbsmqdk007497
+          host: scrbsmqdk007491
           username: pkh045
           password: yc]%2z\93C(cB[WE
           port: 22
