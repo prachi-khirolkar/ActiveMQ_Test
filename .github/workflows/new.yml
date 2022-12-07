@@ -39,4 +39,4 @@ jobs:
       - name: Git connect
         run: |
           echo $BRANCH_NAME
-		  echo "Welcome to GitHUB"
+          echo "Welcome to GitHUB"
