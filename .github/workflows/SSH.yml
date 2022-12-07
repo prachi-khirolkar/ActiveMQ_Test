@@ -10,10 +10,11 @@ on:
     paths-ignore:
       - ""
 jobs:
-  kafkacluster-api:
+  ssh
     runs-on:
       - self-hosted
       - scrbsmqdk007491
+      - ubuntu-latest
     name: validation
     steps:
       - name: Checkout source code
@@ -23,7 +24,7 @@ jobs:
       - name: validation
         id: files
         run: |
-          host: scrbsmqdk007497
+          host: scrbsmqdk007491
           username: pkh045
           password: yc]%2z\93C(cB[WE
           port: 22
