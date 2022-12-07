@@ -10,7 +10,7 @@ on:
     paths-ignore:
       - ""
 jobs:
-  ssh
+  build-and-deploy
     runs-on:
       - self-hosted
       - scrbsmqdk007491
