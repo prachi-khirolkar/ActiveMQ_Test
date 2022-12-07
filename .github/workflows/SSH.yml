@@ -23,7 +23,9 @@ jobs:
       - name: validation
         id: files
         run: |
-          mkdir -p /tmp/test
-          SSH_PRIVATE_KEY: ${{secrets.SSH_PRIVATE_KEY}}
-          ssh -i $SSH_PRIVATE_KEY pkh045@scrbsmqdk007491
-###
+          host: scrbsmqdk007497
+          username: pkh045
+          password: yc]%2z\93C(cB[WE
+          port: 22
+          script: |
+            mkdir -p /home/pkh045/test
