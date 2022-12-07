@@ -12,9 +12,9 @@ on:
 jobs:
   build: null
   runs-on:
-    - self-hosted
-    - activemq_7491
-    - ubuntu-latest
+      - self-hosted
+      - activemq_7491
+      - ubuntu-latest
   name: validation
   steps:
     - name: Checkout source code
