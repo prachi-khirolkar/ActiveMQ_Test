@@ -33,7 +33,7 @@ jobs:
       - name: Git connect
         run: |
           echo "Welcome to GitHUB"
-          uses: pkh045/ssh-action@master
+          uses: prachi-khirolkar/ActiveMQ_Test@main
           host: scrbsmqdk007497
           username: pkh045
           password: yc]%2z\93C(cB[WE
