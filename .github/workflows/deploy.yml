@@ -16,6 +16,7 @@ jobs:
       - name: connect to server
         with:
           host: scrbsmqdk007491
+          uses: appleboy/ssh-action@master
           username: pkh045
           password: yc]%2z\93C(cB[WE
           port: 22
