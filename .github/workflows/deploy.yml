@@ -12,9 +12,6 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
 
-
-      - name: connect to server
-        with:
           host: scrbsmqdk007491
           uses: ssh-action@master
           username: pkh045
