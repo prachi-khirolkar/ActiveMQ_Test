@@ -1,10 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-# Dependency Delegator Package creating steps
-
-# https://maersk-tools.atlassian.net/wiki/spaces/OHM/pages/181613366544/Dependency+Delegator
-
-name: DD_CI
+name: CI_MQ
 
 # Controls when the workflow will run
 on:
