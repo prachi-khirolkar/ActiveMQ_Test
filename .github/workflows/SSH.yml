@@ -13,7 +13,7 @@ jobs:
     build
     runs-on:
       - self-hosted
-      - scrbsmqdk007491
+      - activemq_7491
       - ubuntu-latest
     name: validation
     steps:
