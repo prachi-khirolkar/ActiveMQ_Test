@@ -17,7 +17,7 @@ jobs:
     - ubuntu-latest
   name: validation
   steps:
-    - uses: actions/checkout@main
+  uses: actions/checkout@main
     - name: Run script file
       run: chmod +x ./.github/script.sh ./.github/script.sh
       shell: bash
