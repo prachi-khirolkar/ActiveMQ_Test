@@ -1,5 +1,5 @@
 ---
-name: CI
+name: CI_script
 on:
   push:
     branches:
