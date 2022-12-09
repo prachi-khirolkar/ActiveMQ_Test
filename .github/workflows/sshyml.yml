@@ -1,0 +1,23 @@
+---
+name: CI
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - ""
+jobs:
+  build: null
+  runs-on:
+    - self-hosted
+    - activemq_7491
+    - ubuntu-latest
+  name: validation
+  steps:
+    - uses: actions/checkout@main
+    - name: Run script file
+      run: chmod +x ./.github/script.sh ./.github/script.sh
+      shell: bash
