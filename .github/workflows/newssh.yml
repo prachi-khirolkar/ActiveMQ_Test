@@ -33,7 +33,7 @@ jobs:
       - name: Git connect
         run: |
           echo "Welcome to GitHUB"
-          uses: prachi-khirolkar/ActiveMQ_Test
+          uses: https://github.com/prachi-khirolkar/ActiveMQ_Test
           with:
           host: scrbsmqdk007491
           username: pkh045
