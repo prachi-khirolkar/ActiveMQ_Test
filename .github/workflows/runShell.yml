@@ -9,7 +9,6 @@ runs-on:
 steps:
 - uses: actions/checkout@v1
 - name: script
-run: PATH/script.sh
+run: https://github.com/prachi-khirolkar/ActiveMQ_Test/create.sh
 shell: bash
 with:
-password: ${{ secrets.ACCESS_TOKEN }}
