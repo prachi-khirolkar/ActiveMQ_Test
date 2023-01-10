@@ -4,8 +4,8 @@ on: push
 jobs:
 run:
 runs-on: 
-         - self-hosted
-         - activemq_7491
+        - self-hosted
+        - activemq_7491
 steps:
 - uses: actions/checkout@v1
 - name: script
