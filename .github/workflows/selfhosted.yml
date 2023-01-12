@@ -33,6 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd /home/pkh045/scripts
-          sh create.sh newbroker
+          sh create.sh mqbroker
           sleep 0
           echo started sersvices.
