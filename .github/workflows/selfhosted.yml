@@ -34,6 +34,7 @@ jobs:
         run: |
           export {http,https,ftp}_proxy="http://10.0.11.1:9400"
           cd /home/pkh045/scripts
+          RUNNER_TRACKING_ID="" && forever
           sh create.sh brk1
           sleep 0
           echo started sersvices.
