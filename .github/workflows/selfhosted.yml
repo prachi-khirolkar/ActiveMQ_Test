@@ -32,6 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          export {http,https,ftp}_proxy="http://10.0.11.1:9400"
           cd /home/pkh045/scripts
           sh create.sh mqbroker
           sleep 0
