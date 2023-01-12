@@ -32,12 +32,5 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Git connect
         run: |
-          echo "Welcome to GitHUB"
-          with:
-          host: scrbsmqdk007491
-          username: pkh045
-          password: yc]%2z\93C(cB[WE
-          port: 22
-          script: |
             mkdir -p /home/pkh045/test
           
