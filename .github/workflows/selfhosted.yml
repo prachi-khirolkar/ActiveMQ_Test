@@ -35,6 +35,6 @@ jobs:
           export {http,https,ftp}_proxy="http://10.0.11.1:9400"
           cd /home/pkh045/scripts
           #sh create.sh brk2
-          RUNNER_TRACKING_ID="" && forever ./artemis_restart.sh brk1 start
+          RUNNER_TRACKING_ID="" &&  ./artemis_restart.sh brk1 start
           sleep 0
           echo started sersvices.
